@@ -4,7 +4,7 @@ Frontend was created with React JS. On loading a user enters his username and en
 After log-in, the user has the ability to buy and sell shares, each of these is a call to the API.
 
 The API is done using API Gateway, one API handles the user logging in, another a buy offer and the last a sell offer.
-Each API is routed to its own lambda function.
+Each API is routed to its own lambda function. Tests were done using Postman.
 
 The data is stored in three DynamoDBs, one in charge of holding usernames and amount of stocks owned, another of buy offers (id, username, price) and the last for sell offers (id, username, price)
 
